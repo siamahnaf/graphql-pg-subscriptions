@@ -22,7 +22,7 @@
     "url": "https://github.com/siamahnaf/graphql-pg-subscriptions"
   },
   "peerDependencies": {
-    "graphql": "latest"
+    "graphql": "*"
   },
   "dependencies": {
     "graphql-subscriptions": "^2.0.0",
