@@ -1,0 +1,50 @@
+{
+  "name": "graphql-pg-subscriptions",
+  "version": "3.2.1",
+  "description": "A graphql subscriptions implementation using postgres and apollo's graphql-subscriptions.",
+  "homepage": "https://github.com/siamahnaf/graphql-pg-subscriptions",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "rimraf dist && npm run build:esm && npm run build.cjs",
+    "build:esm": "tsc",
+    "build.cjs": "tsc --module CommonJS --outDir dist/cjs"
+  },
+  "author": {
+    "name": "Siam Ahnaf",
+    "email": "mail@siamahnaf.com",
+    "url": "https://www.siamahnaf.com"
+  },
+  "keywords": [
+    "pubsub",
+    "pub/sub for pg",
+    "pub/sub for postgreesql",
+    "graphql",
+    "graphql-subscriptions",
+    "graphql-pg-subscriptions"
+  ],
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "directory": "https://github.com/siamahnaf/graphql-pg-subscriptions",
+    "url": "https://github.com/siamahnaf/graphql-pg-subscriptions"
+  },
+  "peerDependencies": {
+    "graphql": "latest"
+  },
+  "dependencies": {
+    "graphql-subscriptions": "^2.0.0",
+    "iterall": "^1.3.0",
+    "pg-ipc": "^1.0.5"
+  },
+  "devDependencies": {
+    "@types/node": "^20.12.12",
+    "@types/pg": "^8.11.6",
+    "graphql": "^16.8.1",
+    "pg": "^8.11.5",
+    "typescript": "^5.4.5"
+  }
+}
