@@ -1,4 +1,4 @@
-# graphql-pg-subscriptions
+# Graphql PG Subscription
 
 A graphql subscriptions implementation using postgres and apollo's graphql-subscriptions.
 
